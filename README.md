@@ -21,7 +21,7 @@ Convert Jira Ticket to URL (e.g. `SF-8088`) to (e.g. `https://mycompany.atlassia
 From the command line, run
 
 ```
-npm install && npm run
+npm install && npm run build
 ```
 
 ## How to Install the Extension
