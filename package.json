@@ -26,6 +26,16 @@
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
   },
+  "preferences": [
+    {
+      "description": "Base URL for Jira links",
+      "name": "baseurl",
+      "placeholder": "https://mycompany.atlassian.net/",
+      "required": true,
+      "title": "Jira Base URL",
+      "type": "textfield"
+    }
+  ],
   "scripts": {
     "build": "ray build -e dist",
     "dev": "ray develop",
