@@ -17,7 +17,7 @@ type Values = {
 export default function Command() {
 
   async function handleSubmit(values: Values) {
-    const url = ticketToUrl(values['jira-ticket']);
+    const url = ticketToUrl(values['jiraTicket']);
 
     // Copy and paste URL.
     // await Clipboard.copy(url, { concealed: true });
@@ -37,7 +37,7 @@ export default function Command() {
       }
     >
       <Form.Description text="This form showcases all available form elements." />
-      <Form.TextField id="jira-ticket" title="Jira Ticket" placeholder="e.g. SF-8088" />
+      <Form.TextField id="jiraTicket" title="Jira Ticket" placeholder="e.g. SF-8088" />
     </Form>
   );
 }
