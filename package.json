@@ -8,11 +8,19 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "index",
-      "title": "Jira Ticket to URL",
-      "subtitle": "Convert Jira ticket (SF-8088) into a URL (https://mycompany.atlassian.net/browser/SF-8088)",
+      "name": "pasteUrl",
+      "title": "Jira URL Paste",
+      "subtitle": "Convert Jira ticket to URL and paste",
       "description": "Convert Jira Ticket to URL (e.g. SF-8088) to (e.g. https://mycompany.atlassian.net/browser/SF-8088) and paste the URL in the current application",
-      "mode": "view"
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "jiraTicket",
+          "type": "text",
+          "required": true,
+          "placeholder": "SF-8088"
+        }
+      ]
     },
     {
       "name": "openUrl",
