@@ -4,19 +4,27 @@ import {
     Clipboard,
     closeMainWindow,
     Form,
+    getPreferenceValues,
     open,
     PopToRootType,
     showToast,
 } from "@raycast/api";
+
+interface Preferences {
+  baseurl: string;
+}
 
 type Values = {
   textfield: string;
 };
 
 export default function Command() {
+
+  const { baseurl } = getPreferenceValues<Preferences>();
+
   async function handleSubmit(values: Values) {
     console.log(values);
-    const url = `https://webdevstudios.atlassian.net/browse/${values['jira-ticket']}`;
+    const url = `${baseurl}browse/${values['jira-ticket']}`;
 
     // Copy and paste URL.
     // await Clipboard.copy(url, { concealed: true });
