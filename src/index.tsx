@@ -1,4 +1,4 @@
-import { Form, ActionPanel, Action, showToast, Clipboard } from "@raycast/api";
+import { Form, ActionPanel, Action, showToast, Clipboard, open } from "@raycast/api";
 
 type Values = {
   textfield: string;
@@ -10,9 +10,9 @@ export default function Command() {
     const url = `https://webdevstudios.atlassian.net/browse/${values['jira-ticket']}`;
 
     // Copy and paste URL.
-    await Clipboard.copy(url, { concealed: true });
-    await Clipboard.paste(url);
-
+    // await Clipboard.copy(url, { concealed: true });
+    // await Clipboard.paste(url);
+    open(url);
     showToast({ title: "Submitted form", message: "See logs for submitted values" });
   }
 
