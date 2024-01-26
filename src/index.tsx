@@ -6,7 +6,6 @@ import {
     Form,
     open,
     PopToRootType,
-    showToast,
 } from "@raycast/api";
 
 import ticketToUrl from './utils/ticketToUrl';
