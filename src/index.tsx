@@ -1,12 +1,13 @@
-import { Form, ActionPanel, Action, showToast } from "@raycast/api";
+import { Form, ActionPanel, Action, showToast, Clipboard } from "@raycast/api";
 
 type Values = {
   textfield: string;
 };
 
 export default function Command() {
-  function handleSubmit(values: Values) {
+  async function handleSubmit(values: Values) {
     console.log(values);
+    await Clipboard.copy("https://example.com");
     showToast({ title: "Submitted form", message: "See logs for submitted values" });
   }
 
