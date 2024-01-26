@@ -33,7 +33,6 @@ export default function Command() {
     // Return to root window.
     closeMainWindow({ popToRootType: PopToRootType.Immediate });
     open(url);
-    showToast({ title: "Submitted form", message: "See logs for submitted values" });
   }
 
   return (
