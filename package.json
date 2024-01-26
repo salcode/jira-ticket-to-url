@@ -19,7 +19,15 @@
       "title": "Jira Visit Ticket URL",
       "subtitle": "Open URL for the given Jira ticket",
       "description": "Prompts the user for a Jira ticket (e.g. SF-8088) and opens the URL that goes with the ticket (e.g. https://mycompany.atlassian.net/browser/SF-8088)",
-      "mode": "view"
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "jiraTicket",
+          "type": "text",
+          "required": true,
+          "placeholder": "SF-8088"
+        }
+      ]
     }
   ],
   "dependencies": {
