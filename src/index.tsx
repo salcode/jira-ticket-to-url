@@ -2,8 +2,10 @@ import {
     Action,
     ActionPanel,
     Clipboard,
+    closeMainWindow,
     Form,
     open,
+    PopToRootType,
     showToast,
 } from "@raycast/api";
 
@@ -19,6 +21,9 @@ export default function Command() {
     // Copy and paste URL.
     // await Clipboard.copy(url, { concealed: true });
     // await Clipboard.paste(url);
+
+    // Return to root window.
+    closeMainWindow({ popToRootType: PopToRootType.Immediate });
     open(url);
     showToast({ title: "Submitted form", message: "See logs for submitted values" });
   }
