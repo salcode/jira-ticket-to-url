@@ -37,7 +37,7 @@ export default function Command() {
       }
     >
       <Form.Description text="This form showcases all available form elements." />
-      <Form.TextField id="jiraTicket" title="Jira Ticket" placeholder="e.g. SF-8088" />
+      <Form.TextField id="jiraTicket" title="Jira Ticket" placeholder="e.g. SF-8088" defaultValue="WENG-70" />
     </Form>
   );
 }
