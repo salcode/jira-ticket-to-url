@@ -7,7 +7,12 @@ type Values = {
 export default function Command() {
   async function handleSubmit(values: Values) {
     console.log(values);
-    await Clipboard.copy("https://example.com");
+    const url = `https://webdevstudios.atlassian.net/browse/${values['jira-ticket']}`;
+
+    // Copy and paste URL.
+    await Clipboard.copy(url, { concealed: true });
+    await Clipboard.paste(url);
+
     showToast({ title: "Submitted form", message: "See logs for submitted values" });
   }
 
