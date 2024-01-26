@@ -1,6 +1,4 @@
-import {
-    getPreferenceValues,
-} from "@raycast/api";
+import { getPreferenceValues } from "@raycast/api";
 
 interface Preferences {
   baseurl: string;
@@ -8,5 +6,5 @@ interface Preferences {
 
 export default function ticketToUrl(ticket) {
   const { baseurl } = getPreferenceValues<Preferences>();
-  return `${baseurl}browse/${ticket}`
+  return `${baseurl}browse/${ticket}`;
 }
