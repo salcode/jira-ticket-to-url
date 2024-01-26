@@ -13,6 +13,13 @@
       "subtitle": "Convert Jira ticket (SF-8088) into a URL (https://mycompany.atlassian.net/browser/SF-8088)",
       "description": "Convert Jira Ticket to URL",
       "mode": "view"
+    },
+    {
+      "name": "openUrl",
+      "title": "Jira Visit Ticket URL",
+      "subtitle": "Open URL for the given Jira ticket",
+      "description": "Prompts the user for a Jira ticket (e.g. SF-8088) and opens the URL that goes with the ticket (e.g. https://mycompany.atlassian.net/browser/SF-8088)",
+      "mode": "view"
     }
   ],
   "dependencies": {
