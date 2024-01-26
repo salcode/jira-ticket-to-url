@@ -8,6 +8,7 @@ import {
     PopToRootType,
 } from "@raycast/api";
 
+import TicketInputForm from './components/TicketInputForm';
 import ticketToUrl from './utils/ticketToUrl';
 
 type Values = {
@@ -36,7 +37,7 @@ export default function Command() {
         </ActionPanel>
       }
     >
-      <Form.Description text="This form showcases all available form elements." />
+      <TicketInputForm />
       <Form.TextField id="jiraTicket" title="Jira Ticket" placeholder="e.g. SF-8088" defaultValue="WENG-70" />
     </Form>
   );
