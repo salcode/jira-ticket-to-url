@@ -19,8 +19,6 @@ export default async function Command(props: LaunchProps<{ arguments: JiraTicket
   } = props;
   const url = ticketToUrl(jiraTicket);
 
-  // Copy and paste URL.
-  await Clipboard.copy(url, { concealed: true });
   await Clipboard.paste(url);
 
   closeMainWindow({ popToRootType: PopToRootType.Immediate });
