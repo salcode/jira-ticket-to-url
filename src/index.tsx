@@ -13,8 +13,8 @@ type Values = {
 
 export default function Command() {
 
-  async function handleSubmit(values: Values) {
-    const url = ticketToUrl(values.jiraTicket);
+  async function handleSubmit({jiraTicket}: Values) {
+    const url = ticketToUrl(jiraTicket);
 
     // Copy and paste URL.
     await Clipboard.copy(url, { concealed: true });
