@@ -1,4 +1,11 @@
-import { Form, ActionPanel, Action, showToast, Clipboard, open } from "@raycast/api";
+import {
+    Action,
+    ActionPanel,
+    Clipboard,
+    Form,
+    open,
+    showToast,
+} from "@raycast/api";
 
 type Values = {
   textfield: string;
