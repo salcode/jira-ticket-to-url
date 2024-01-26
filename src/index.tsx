@@ -11,13 +11,13 @@ import {
 import ticketToUrl from './utils/ticketToUrl';
 
 type Values = {
-  textfield: string;
+  jiraTicket: string;
 };
 
 export default function Command() {
 
   async function handleSubmit(values: Values) {
-    const url = ticketToUrl(values['jiraTicket']);
+    const url = ticketToUrl(values.jiraTicket);
 
     // Copy and paste URL.
     // await Clipboard.copy(url, { concealed: true });
