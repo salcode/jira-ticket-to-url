@@ -15,8 +15,8 @@ export default function TicketInputForm({handleSubmit}) {
         </ActionPanel>
       }
     >
-      <Form.Description text="This form showcases all available form elements." />
-      <Form.TextField id="jiraTicket" title="Jira Ticket" placeholder="e.g. SF-8088" defaultValue="WENG-70" />
+      <Form.Description text="Please enter the Jira ticket ID (e.g. SF-8088)" />
+      <Form.TextField id="jiraTicket" title="Jira Ticket" placeholder="SF-8088" defaultValue="WENG-70" />
     </Form>
   );
 }
