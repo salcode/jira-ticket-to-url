@@ -19,7 +19,7 @@ export default function Command() {
       }
     >
       <Form.Description text="This form showcases all available form elements." />
-      <Form.TextField id="textfield" title="Text field" placeholder="Enter text" defaultValue="Raycast" />
+      <Form.TextField id="textfield" title="Text field" placeholder="Enter text" />
     </Form>
   );
 }
