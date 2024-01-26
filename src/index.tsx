@@ -23,7 +23,6 @@ export default function Command() {
   const { baseurl } = getPreferenceValues<Preferences>();
 
   async function handleSubmit(values: Values) {
-    console.log(values);
     const url = `${baseurl}browse/${values['jira-ticket']}`;
 
     // Copy and paste URL.
