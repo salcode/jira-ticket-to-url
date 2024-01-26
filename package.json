@@ -42,7 +42,7 @@
       "title": "Jira Visit Ticket URL",
       "subtitle": "Open URL for the Jira ticket",
       "mode": "no-view",
-      "description": "Prompts the user for a Jira ticket (e.g. SF-8088) and opens the URL that goes with the ticket (e.g. https://mycompany.atlassian.net/browse/SF-8088)",
+      "description": "Convert Jira Ticket to URL (e.g. SF-8088) to (e.g. https://mycompany.atlassian.net/browse/SF-8088) and open the URL with your default web browser",
       "arguments": [
         {
           "name": "jiraTicket",
