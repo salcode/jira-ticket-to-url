@@ -1,7 +1,6 @@
 import {
     Clipboard,
     closeMainWindow,
-    open,
     PopToRootType,
 } from "@raycast/api";
 
@@ -18,12 +17,11 @@ export default function Command() {
     const url = ticketToUrl(values.jiraTicket);
 
     // Copy and paste URL.
-    // await Clipboard.copy(url, { concealed: true });
-    // await Clipboard.paste(url);
+    await Clipboard.copy(url, { concealed: true });
+    await Clipboard.paste(url);
 
     // Return to root window.
     closeMainWindow({ popToRootType: PopToRootType.Immediate });
-    open(url);
   }
 
   return (

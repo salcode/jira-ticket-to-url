@@ -11,7 +11,7 @@
       "name": "index",
       "title": "Jira Ticket to URL",
       "subtitle": "Convert Jira ticket (SF-8088) into a URL (https://mycompany.atlassian.net/browser/SF-8088)",
-      "description": "Convert Jira Ticket to URL",
+      "description": "Convert Jira Ticket to URL (e.g. SF-8088) to (e.g. https://mycompany.atlassian.net/browser/SF-8088) and paste the URL in the current application",
       "mode": "view"
     },
     {
