@@ -1,9 +1,6 @@
 import {
-    Action,
-    ActionPanel,
     Clipboard,
     closeMainWindow,
-    Form,
     open,
     PopToRootType,
 } from "@raycast/api";
@@ -30,15 +27,6 @@ export default function Command() {
   }
 
   return (
-    <Form
-      actions={
-        <ActionPanel>
-          <Action.SubmitForm onSubmit={handleSubmit} />
-        </ActionPanel>
-      }
-    >
-      <TicketInputForm />
-      <Form.TextField id="jiraTicket" title="Jira Ticket" placeholder="e.g. SF-8088" defaultValue="WENG-70" />
-    </Form>
+    <TicketInputForm handleSubmit={handleSubmit} />
   );
 }
