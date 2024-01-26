@@ -17,7 +17,7 @@
     {
       "name": "openUrl",
       "title": "Jira Visit Ticket URL",
-      "subtitle": "Open URL for the given Jira ticket",
+      "subtitle": "Open URL for the Jira ticket",
       "description": "Prompts the user for a Jira ticket (e.g. SF-8088) and opens the URL that goes with the ticket (e.g. https://mycompany.atlassian.net/browser/SF-8088)",
       "mode": "no-view",
       "arguments": [
